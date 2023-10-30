@@ -1,0 +1,373 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+
+  background-image: url("https://images.pexels.com/photos/7706655/pexels-photo-7706655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 100%;
+  animation: fadeInBackground 1s ease forwards;
+}
+::selection {
+  background: #36342d;
+}
+::-webkit-selection {
+  background: #2d2f36;
+}
+::-moz-selection {
+  background: #2d2f36;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background-color: white;
+
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  padding-left: 8%;
+
+  font-size: 40px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 12%;
+  padding-top: 6%;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  margin: 40px;
+}
+.right {
+  background: rgba(174, 109, 34, 0.583);
+
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+  color: #000000;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+svg {
+  position: absolute;
+  width: 320px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: rgb(255, 255, 255);
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+#submit {
+  font-size: 13px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4%;
+  width: 30%;
+  color: #000000;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+#submit:focus {
+  color: #f2f2f2;
+}
+#submit:active {
+  color: #d0d0d2;
+}
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Estilo para el encabezado */
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+/*https://images.pexels.com/photos/5635106/pexels-photo-5635106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1*/
+body {
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  animation: fadeInBackground 1s ease forwards;
+
+  /*FUENTES*/
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Estilo para el encabezado */
+.logo {
+  display: flex;
+  width: 100px;
+  /* Usar flexbox para alinear el contenido verticalmente */
+}
+
+.logo img {
+  width: 90%; /* Ajustar la imagen al 100% del ancho del div contenedor */
+  height: auto; /* Mantener la proporción original de la imagen */
+  margin: 0;
+  padding: 0;
+}
+/*#logo {
+  width: 30%;
+  font-size: 30px;
+  float: left;
+  margin-top: 35px;
+}
+
+#logo img {
+  display: block;
+  float: left;
+  height: 60px;
+  margin-top: -9px;
+  margin-right: 10px;
+  animation: latir infinite 5s linear;
+}*/
+header {
+  padding: 1%;
+
+  display: flex;
+
+  align-items: center;
+  width: 100vw;
+}
+
+header h1 {
+  text-align: left;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: white;
+  margin: 0;
+}
+h2 {
+  color: white;
+  font-family: Creepster, sans-serif;
+  text-align: center;
+  margin-top: -2%;
+  font-weight: lighter;
+  opacity: 0;
+  font-size: 400%;
+  animation: fadeInH2 1s ease 2s forwards;
+}
+
+@keyframes fadeInH2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-family: Creepster, sans-serif;
+  font-size: 800%;
+  animation: fadeInH3 1s ease 4s forwards;
+  opacity: 0;
+}
+@keyframes fadeInH3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ul {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  display: flex;
+  gap: 8%;
+  list-style: none;
+  margin-left: 65%;
+}
+.li {
+  list-style: none;
+}
+.li a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(99, 99, 99);
+}
+.p {
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+body img {
+  margin-left: 38vw;
+  animation: bounceIn 1.5s ease 2s forwards;
+  opacity: 0;
+}
+@keyframes bounceIn {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+button {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: 46%;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+}
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+  ul {
+    gap: 4%; /* Reduzca el espacio entre elementos en pantallas más pequeñas */
+  }
+
+  .li {
+    font-size: 0.8em; /* Reduzca el tamaño del texto en pantallas más pequeñas si es necesario */
+  }
+}
+@keyframes bounceIn {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+button {
+  font-family: Creepster, sans-serif;
+
+  margin-top: 1%;
+  margin-left: 46%;
+  padding: 8px;
+  font-size: 22px;
+  border-radius: 12px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+  ul {
+    gap: 4%; /* Reduzca el espacio entre elementos en pantallas más pequeñas */
+  }
+
+  .li {
+    font-size: 0.8em; /* Reduzca el tamaño del texto en pantallas más pequeñas si es necesario */
+  }
+}

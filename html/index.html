@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css"></link>
+  </head>
+  <body>
+    <!-- Encabezado-->
+    <header>
+      <div class="logo">
+        <img src="../images/vector-logo-halloween-fantasma_22451-405-removebg-preview.png" alt="Tu imagen" />
+      </div>
+      
+      <h1>SpookyScreams</h1>
+      <ul class="ul">
+        <li class="li"><a href="./index.html" title="Home">Home</a></li>
+        <li class="li"><a href="./Blog/blog.html" title="Inicio">Articles</a></li>
+        <li class="li"><a href="./Contact/contact.html" title="contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <h2>TRICK OR TREAT</h2>
+    <h3>HALLOWEEN</h3>
+
+    <img src="../images/calabaza.png"  alt="mano" width="400" />
+    
+    <button id="playButton">CLICK HERE</button>
+    
+    <audio id="halloweenMusic" src="../audio/music.mp3" preload="auto"></audio>
+    <!--Audio-->
+    <script>
+      var audio = document.getElementById("halloweenMusic");
+      var playButton = document.getElementById("playButton");
+      
+      playButton.addEventListener("click", function() {
+        if (audio.paused) {
+          audio.play();
+          playButton.textContent = "STOP SONG";
+        } else {
+          audio.pause();
+          playButton.textContent = "CLICK HERE";
+        }
+      });
+    </script>
+  </body>
+</html>
