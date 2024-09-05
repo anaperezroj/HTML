@@ -3,7 +3,8 @@
 Este es un proyecto ficticio de una página web diseñada específicamente para celebrar la temática de **Halloween**. El proyecto no tiene funcionalidad avanzada ni backend, se centra únicamente en el diseño visual y la experiencia del usuario utilizando **HTML**, **CSS**, y un poco de **JavaScript** para efectos interactivos.
 
 ---
-![Uploading hall.png…]()
+![hall](https://github.com/user-attachments/assets/b883fd93-38f8-4c08-9d62-97286c529e19)
+
 
 ## 👻 Descripción del Proyecto
 
